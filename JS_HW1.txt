@@ -1,0 +1,47 @@
+var message1 = 'number' + 3 + 3;   //"number33" (concat)
+console.log(message1);
+
+var message2 = null + 3; //3 (concat null and 3)
+console.log(message2);
+
+var message3 = 5 && "qwerty"; //"qwerty" (присвоєння)
+console.log(message3);
+
+var a = 
++'40' + +'2' + "hillel"; //"42hillel"  (concat)
+console.log(a);
+
+var b= '10' - 5 === 6; //false  (10-5=5  5!=6)
+console.log(b);
+
+var c = true + false; //1  (1+0=1)
+console.log(c);
+
+var d ='4px' - 3; //NaN  (string - 3 = NaN)
+console.log(d);
+
+var f='4' - 3; //1 (4-3=1)
+console.log(f);
+
+var i='6' + 3 ** 0; // 61  (3 в ступені 0 = 1, і спереду 6 concat)
+console.log(i);
+
+console.log(12 / '6'); // 2 (12:6=2)
+
+console.log('10' + (5 === 6));  //"10false". (10 concat with (5=6 is false))
+
+console.log(null == ''); //false  (null != empty)
+
+console.log(3 ** (9 / 3)); // 27 (3 в степені 9:3=3)
+
+console.log(!!'false' == !!'true')  //true  подвійне заперечення значенння
+
+console.log(0 || '0' && 1); //1 (0 or 0 and 1 = 1)
+
+console.log((+null == false)<1 ); //false (true <1 = false )
+
+console.log(false && true || true); // true  (0 and 1 or 1 =1 )
+
+console.log(false && (false || true)); // false (0 and(0 or 1 =1) =0)
+
+console.log((+null == false) < 1 ** 5); //false (true <1 = false)
