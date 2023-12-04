@@ -1,0 +1,21 @@
+//var measureType='км';
+//var measureType='год.'
+//var measureType='кг'
+var measureType='edef'
+var q= 1; //quantity
+var converted;
+switch (measureType)
+{
+    case 'км':
+        converted=q*1000 + ' метрів';
+        break;
+    case 'год.':
+        converted=q*60 + ' хвилин';
+        break;
+    case 'кг':
+        converted=q*1000 + ' гр.';
+        break;
+    default:
+        console.log("невідома величина");
+};
+console.log(q + ' ' + measureType + ' це ' +converted );
