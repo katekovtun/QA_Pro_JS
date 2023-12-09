@@ -1,0 +1,13 @@
+
+// зведення в степінь 
+
+var x = 2;
+var y = 3;
+function pow(x,y){
+    var i = 0;
+    var j=1;
+    do {
+        i ++;
+        j*=x;
+    } while (i < y);
+    console.log(x + ' в степені ' + y + ' = ' + j);

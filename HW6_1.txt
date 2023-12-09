@@ -1,0 +1,23 @@
+
+//трикутник
+
+var quantity=5;
+var symbol='^';
+function drawTriangle(quantity, symbol)
+{
+    let j='';
+    for(let i=0; i <quantity; i++){
+    j += symbol;
+    console.log(j);
+    }
+}
+drawTriangle(quantity, symbol);
+
+///трикутник //----------------
+
+var j='';
+var i = 0;
+do {
+    i ++;
+    console.log(j+="+");
+} while (i < 5);
